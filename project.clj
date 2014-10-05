@@ -6,9 +6,11 @@
             :dependencies [[org.clojure/clojure "1.6.0"]
                            [org.clojure/clojurescript "0.0-2356"]]
             :plugins [[lein-cljsbuild "1.0.3"]]
-            :cljsbuild {
-                         :builds [{:source-path "src/cljs"
-                                   :compiler    {
-                                                  :output-to     "resources/public/js/hello.js"
-                                                  :optimizations :whitespace :pretty-print true
-                                                  }}]})
+            :cljsbuild
+            {:builds
+              [{:source-paths ["src/cljs"],
+                :compiler
+                              {:optimizations :advanced,
+                               :output-dir    "tmp-js",
+                               :output-to     "resources/public/cljs/hello.js",
+                               :pretty-print  true}}]})

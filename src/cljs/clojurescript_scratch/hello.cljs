@@ -1,2 +1,2 @@
 (ns clojurescript-scratch.hello)
-(.write js/document "<p>Hello, world!</p>")
+(.write js/document "<p>Hello, World!</p>")
