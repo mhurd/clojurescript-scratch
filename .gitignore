@@ -13,3 +13,4 @@ pom.xml
 
 # Generated js files
 resources/public/cljs
+resources/tmp-js
